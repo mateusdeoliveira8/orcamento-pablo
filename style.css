@@ -1,0 +1,159 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 2000px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* __________________________________________________________________________________________________________
+header */
+.logo {
+  color: #215a60;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+  color: #215a60;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.foto-header {
+  height: 400px;
+  background-image: url("./img/img\ header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* __________________________________________________________________________________________________________
+sobre */
+
+.sobre-bg {
+  background: #215a60;
+}
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.titulo-sobre {
+  font-size: 3em;
+}
+
+.descricao-sobre {
+  font-size: 25px;
+}
+
+@media (max-width: 375px) {
+  .sobre {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .titulo-sobre {
+    font-size: 40px;
+  }
+}
+/* __________________________________________________________________________________________________________
+servicos */
+
+.servico-bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 960px;
+  margin: 0 auto;
+  gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.titulo-servicos {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.espe {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 375px) {
+  .servico-bg {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr;
+    padding: 36px;
+  }
+  .titulo-servicos {
+    display: grid;
+    max-width: 960px;
+    margin-left: 40px;
+  }
+  .espe {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+/* __________________________________________________________________________________________________________
+rodape */
+.foto-footer {
+  height: 400px;
+  background-image: url("./img/construction-silhouette\ \(1\).jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.footer-bg {
+  height: 200px;
+  background-color: #215a60;
+}
+
+.rodape {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px;
+  gap: 20px;
+}
+
+@media (max-width: 375px) {
+  .rodape {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+}
